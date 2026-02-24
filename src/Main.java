@@ -30,6 +30,8 @@ public class Main {
 
         } else if (numberOfYears >= 18 && numberOfYears <= 24) {
             System.out.println("Если возраст человека равен " + numberOfYears + ", то его место в университете");
+        } else if (numberOfYears > 24) {
+            System.out.println("Если возраст человека равен " + numberOfYears + ", то ему пора ходить на работу");
         }
 
 
@@ -51,12 +53,12 @@ public class Main {
         int numberOfSeatedPassengers = 50;
         int numberOfPassengersStanding = 42;
 
-        if (numberOfSeatedPassengers < seats){
+        if (numberOfSeatedPassengers < seats) {
             int accessibleSeating = seats - numberOfSeatedPassengers;
 
             System.out.println("Доступное количество сидячих мест " + accessibleSeating + " шт.");
         }
-        if (numberOfPassengersStanding < standingPlaces){
+        if (numberOfPassengersStanding < standingPlaces) {
             int accessibleStanding = standingPlaces - numberOfPassengersStanding;
             System.out.println("Доступное количество стоячих мест " + accessibleStanding + " шт.");
         } else if (numberOfPeopleInTheCarriage <= numberOfSeatedPassengers + numberOfPassengersStanding) {
